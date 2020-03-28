@@ -19,5 +19,8 @@
 	"homepage": "https://github.com/rzgholizadeh/node-project-runner#readme",
 	"bin": {
 		"app": "index.js"
+	},
+	"dependencies": {
+		"chokidar": "^3.3.1"
 	}
 }

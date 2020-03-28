@@ -1,3 +1,14 @@
 #!/usr/bin/env node
 
-console.log("Hello world!");
+const chokidar = require("chokidar");
+chokidar
+	.watch(".")
+	.on("add", () => {
+		console.log("FILE ADDED");
+	})
+	.on("change", () => {
+		console.log("FILE CHANGED");
+	})
+	.on("unlink", () => {
+		console.log("FILE UNLINKED");
+	});
